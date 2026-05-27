@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Robert | Premium Legal Solutions Partner</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#3f2e00",
+                        "on-surface-variant": "#d0c5b3",
+                        "surface-container-highest": "#333535",
+                        "on-secondary-fixed-variant": "#454749",
+                        "error-container": "#93000a",
+                        "inverse-primary": "#765a16",
+                        "surface-tint": "#e6c274",
+                        "on-secondary-fixed": "#1a1c1e",
+                        "on-secondary-container": "#b4b5b7",
+                        "surface": "#121414",
+                        "surface-container-low": "#1a1c1c",
+                        "outline-variant": "#4d4638",
+                        "surface-variant": "#333535",
+                        "secondary": "#c6c6c9",
+                        "on-secondary": "#2f3133",
+                        "tertiary-container": "#a6a7a9",
+                        "tertiary-fixed": "#e2e2e5",
+                        "on-primary-fixed-variant": "#5b4300",
+                        "inverse-surface": "#e2e2e2",
+                        "outline": "#998f7f",
+                        "on-tertiary": "#2f3133",
+                        "surface-container-high": "#282a2b",
+                        "primary-fixed-dim": "#e6c274",
+                        "on-background": "#e2e2e2",
+                        "surface-container": "#1e2020",
+                        "surface-bright": "#38393a",
+                        "surface-container-lowest": "#0c0f0f",
+                        "tertiary": "#c6c6c9",
+                        "error": "#ffb4ab",
+                        "surface-dim": "#121414",
+                        "inverse-on-surface": "#2f3131",
+                        "tertiary-fixed-dim": "#c6c6c9",
+                        "primary": "#e6c274",
+                        "primary-fixed": "#ffdf9d",
+                        "on-primary-fixed": "#251a00",
+                        "on-primary-container": "#4e3900",
+                        "on-error-container": "#ffdad6",
+                        "secondary-container": "#454749",
+                        "on-tertiary-fixed-variant": "#454749",
+                        "on-error": "#690005",
+                        "secondary-fixed": "#e2e2e5",
+                        "primary-container": "#c5a358",
+                        "on-tertiary-fixed": "#1a1c1e",
+                        "background": "#121414",
+                        "secondary-fixed-dim": "#c6c6c9",
+                        "on-surface": "#e2e2e2",
+                        "on-tertiary-container": "#3b3d3f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-lg": "48px",
+                        "stack-md": "24px",
+                        "section-gap": "200px",
+                        "container-max": "1440px",
+                        "margin-mobile": "24px",
+                        "gutter": "32px",
+                        "stack-sm": "12px",
+                        "margin-desktop": "120px"
+                    },
+                    "fontFamily": {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass {
+            backdrop-filter: blur(24px);
+            border: 1px solid rgba(230, 194, 116, 0.1);
+            background: rgba(30, 32, 32, 0.6);
+        }
+        .hero-reveal {
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+            animation: revealUp 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+        }
+        @keyframes revealUp {
+            to { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+        }
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .premium-shadow {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 30px rgba(197, 163, 88, 0.05);
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -4px;
+            left: 0;
+            background: #e6c274;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .stat-card:hover {
+            border-color: rgba(230, 194, 116, 0.4);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-8 px-margin-desktop" id="main-header">
+<nav class="max-w-container-max mx-auto flex justify-between items-center glass rounded-full px-10 py-4 border-outline-variant/10 shadow-2xl">
+<a class="text-2xl font-extrabold tracking-tight text-on-surface flex items-center gap-2" href="#">
+<span class="w-8 h-8 bg-primary rounded-sm inline-block"></span>
+            Rashtra Pal
+        </a>
+<div class="hidden md:flex items-center gap-10">
+<a class="nav-link relative text-on-surface-variant hover:text-primary transition-colors font-medium text-sm tracking-wide uppercase" href="#about">About</a>
+<a class="nav-link relative text-on-surface-variant hover:text-primary transition-colors font-medium text-sm tracking-wide uppercase" href="#services">Services</a>
+<a class="nav-link relative text-on-surface-variant hover:text-primary transition-colors font-medium text-sm tracking-wide uppercase" href="#projects">Works</a>
+<a class="nav-link relative text-on-surface-variant hover:text-primary transition-colors font-medium text-sm tracking-wide uppercase" href="#process">Method</a>
+<a class="nav-link relative text-on-surface-variant hover:text-primary transition-colors font-medium text-sm tracking-wide uppercase" href="#testimonials">Reviews</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded font-bold hover:brightness-110 active:scale-95 transition-all text-sm uppercase tracking-widest shadow-lg shadow-primary/20">
+            Consult Now
+        </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-24 overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 z-0">
+<div class="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
+<div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary/3 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2"></div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop w-full grid lg:grid-cols-2 gap-20 items-center relative z-10">
+<div class="hero-reveal">
+<div class="inline-flex items-center gap-3 bg-surface-container-high px-4 py-2 mb-stack-lg border border-outline-variant/30 rounded-sm">
+<span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span class="text-xs font-bold tracking-[0.2em] text-on-surface-variant uppercase">Solicitors Regulation Authority: 9876550</span>
+</div>
+<h1 class="text-[clamp(3.5rem,8vw,5.5rem)] font-extrabold text-on-surface mb-stack-lg leading-[0.9] tracking-tighter">
+                    Crafting <span class="text-primary italic">Excellence</span> In Global Law
+                </h1>
+<p class="text-xl text-on-surface-variant mb-12 max-w-lg leading-relaxed">
+                    A premier legal practice delivering sophisticated, strategic, and results-driven advocacy for high-stakes corporate and private matters.
+                </p>
+<div class="grid grid-cols-3 gap-gutter mb-12">
+<div class="stat-card p-6 border-l border-primary/20 bg-surface-container/30 transition-all">
+<div class="text-4xl font-bold text-primary mb-2">10+</div>
+<div class="text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">Years Experience</div>
+</div>
+<div class="stat-card p-6 border-l border-primary/20 bg-surface-container/30 transition-all">
+<div class="text-4xl font-bold text-primary mb-2">95%</div>
+<div class="text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">Success Rate</div>
+</div>
+<div class="stat-card p-6 border-l border-primary/20 bg-surface-container/30 transition-all">
+<div class="text-4xl font-bold text-primary mb-2">250+</div>
+<div class="text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">Cases Resolved</div>
+</div>
+</div>
+<div class="flex gap-6">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-sm font-bold hover:translate-y-[-2px] transition-all flex items-center gap-3 shadow-xl shadow-primary/20 group">
+                        Get a Free Evaluation
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</button>
+</div>
+</div>
+<div class="relative lg:block hidden">
+<div class="relative z-10 hero-reveal" style="animation-delay: 0.2s">
+<div class="aspect-[4/5] rounded-sm overflow-hidden premium-shadow border border-outline-variant/20">
+<img alt="Rashtra Pal" class="w-full h-full object-cover grayscale brightness-110 hover:grayscale-0 transition-all duration-1000 scale-105 hover:scale-100" src="assets/images/new_lawyer_transparent.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-10 -right-10 w-40 h-40 border-r-2 border-b-2 border-primary/30 z-0"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Me Section -->
+<section class="py-section-gap bg-surface" id="about">
+<div class="max-w-container-max mx-auto px-margin-desktop scroll-reveal">
+<div class="grid lg:grid-cols-12 gap-20 items-center">
+<div class="lg:col-span-7 space-y-10">
+<div class="space-y-4">
+<div class="text-primary font-bold tracking-[0.3em] uppercase text-xs flex items-center gap-4">
+<span class="w-12 h-px bg-primary/30"></span>
+                            Firm Philosophy
+                        </div>
+<h2 class="text-5xl md:text-6xl font-bold text-on-surface leading-tight tracking-tight">Built On Integrity,<br/>Driven By Justice</h2>
+</div>
+<p class="text-xl text-on-surface-variant leading-relaxed">
+                        At the core of our practice is a relentless pursuit of clarity in a complex world. We don't just provide legal advice; we partner with our clients to navigate the most intricate regulatory and judicial landscapes with precision. Our methodology combines decades of institutional knowledge with cutting-edge legal strategy.
+                    </p>
+<div class="flex gap-10 border-t border-outline-variant/20 pt-10">
+<div class="space-y-2">
+<h4 class="text-primary font-bold">Strategic Counsel</h4>
+<p class="text-sm text-on-surface-variant">Preventative legal frameworks to mitigate future risk.</p>
+</div>
+<div class="space-y-2">
+<h4 class="text-primary font-bold">Elite Advocacy</h4>
+<p class="text-sm text-on-surface-variant">Aggressive representation in high-stakes litigation.</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="grid grid-cols-1 gap-8">
+<div class="glass p-10 space-y-6 premium-shadow hover:bg-surface-container transition-colors duration-500 group">
+<span class="material-symbols-outlined text-primary text-5xl group-hover:scale-110 transition-transform">gavel</span>
+<h3 class="text-2xl font-bold">The Gold Standard</h3>
+<p class="text-on-surface-variant leading-relaxed">Setting industry benchmarks for professional conduct and legal excellence across global jurisdictions.</p>
+</div>
+<div class="bg-primary p-10 space-y-6 shadow-2xl translate-x-8 group">
+<span class="material-symbols-outlined text-on-primary text-5xl group-hover:scale-110 transition-transform">verified_user</span>
+<h3 class="text-2xl font-bold text-on-primary">Unwavering Ethics</h3>
+<p class="text-on-primary/80 leading-relaxed">Every action we take is anchored in the highest standards of transparency and fiduciary responsibility.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-section-gap bg-surface-container-lowest" id="services">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8 scroll-reveal">
+<div class="space-y-6">
+<div class="text-primary font-bold tracking-[0.3em] uppercase text-xs flex items-center gap-4">
+<span class="w-12 h-px bg-primary/30"></span>
+                        Areas of Practice
+                    </div>
+<h2 class="text-5xl md:text-6xl font-bold text-on-surface tracking-tight">Bespoke Expertise</h2>
+</div>
+<div class="flex gap-4">
+<button class="w-14 h-14 rounded-full border border-outline-variant/30 flex items-center justify-center hover:bg-primary hover:text-on-primary hover:border-primary transition-all duration-300">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-14 h-14 rounded-full border border-outline-variant/30 flex items-center justify-center hover:bg-primary hover:text-on-primary hover:border-primary transition-all duration-300">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid lg:grid-cols-3 gap-gutter">
+<!-- Service 1 -->
+<div class="group relative overflow-hidden bg-surface-container scroll-reveal transition-all duration-700 hover:-translate-y-4" style="transition-delay: 0.1s">
+<div class="h-[350px] overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ9QdCio1zKnJvgp8K4VMpJUj9jYF4Yn-Z8PRVyc1AwMuuw9DgmK4km82SkBjpJt2-RmzT7hqU2K2svH2Xk1hIupMmKAZgoIlbWQbTUQ1I4lutlIeo-SO7lWKLKv6YzvbD0PXuEQ2QBfzy030Qzmk6wM-aESqJ_wgZk37_iQnA2wqXRQs4e89MvLf1O9W-BnTQ8tvLZdSCM_uT51dXBfk5Y2ZUFDMNNuOAUdSZjpSbLNVJbfeNQuz_-wckLiKQGXCWbYEPYaQh2hlX"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="p-10 space-y-6">
+<div class="text-[10px] font-bold tracking-[0.3em] uppercase text-primary">01 / Corporate</div>
+<h3 class="text-2xl font-bold">Business Advisory</h3>
+<p class="text-on-surface-variant">Navigating complex M&amp;As, regulatory compliance, and cross-border commercial litigation with tactical precision.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold group/link" href="#">
+                            Explore Service
+                            <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="group relative overflow-hidden bg-surface-container scroll-reveal transition-all duration-700 hover:-translate-y-4" style="transition-delay: 0.2s">
+<div class="h-[350px] overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdmBq2nN4mnzVlqXCz0OJCE7WSc485TBEI9XTsuFz2zDFKXkrL6lZC-jEHaUrrLsDIcGtHepMxLYnmmZiZeVLuA8RSBf6NbXBPR53DtF8fUeRJU9NLOA8rl29-5UX33jtBsPOg8zow1EL39_T_Blc9xmQkUs-V-n2aQajKlxQ9ALOhOTDQZQTEB-axJLzwNJ44CC0rbp94aswy7UyGNj9Bz5V7UCcLMA-B6wyz8Pb1NpPT7lGxPi7l06wbV3bUPBr-U8I943E_t_DL"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="p-10 space-y-6">
+<div class="text-[10px] font-bold tracking-[0.3em] uppercase text-primary">02 / Litigation</div>
+<h3 class="text-2xl font-bold">Civil &amp; High-Stakes</h3>
+<p class="text-on-surface-variant">Robust representation in disputes that define the future of your organization or personal legacy.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold group/link" href="#">
+                            Explore Service
+                            <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="group relative overflow-hidden bg-surface-container scroll-reveal transition-all duration-700 hover:-translate-y-4" style="transition-delay: 0.3s">
+<div class="h-[350px] overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6WOJhut-NN5AI2rbEffsx-qsCgk3DEPxpGKUM9I-K132jNfNIsgXYaKm0IKxQ1hy4CG2wNw04ApXAkU-ko8manb4wJbXpNlH9yXYcvie-JDpIaS6kVKo1FBcV-leSTBRp0rv9RD9idOO8Qn5W9C8n1EnuLn8EUYR4Ts-viI9-prNbGCbacFiWX8rbmaamev8sHt2nI_P8eHhQxOdmv5d5I8Jtb8rX_JkgPGjzdOnXdsMIqcgS5bJ_HPTKifPIBrlg0woLbvhY4gsY"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="p-10 space-y-6">
+<div class="text-[10px] font-bold tracking-[0.3em] uppercase text-primary">03 / Defense</div>
+<h3 class="text-2xl font-bold">White Collar &amp; Regulatory</h3>
+<p class="text-on-surface-variant">Strategic defense for high-net-worth individuals and executives facing complex regulatory scrutiny.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold group/link" href="#">
+                            Explore Service
+                            <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Case Studies Section -->
+<section class="py-section-gap bg-surface" id="projects">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center space-y-6 mb-24 scroll-reveal">
+<div class="text-primary font-bold tracking-[0.3em] uppercase text-xs">Portfolio of Excellence</div>
+<h2 class="text-5xl md:text-6xl font-bold tracking-tight">Recent Case Success</h2>
+<div class="w-24 h-1 bg-primary/20 mx-auto"></div>
+</div>
+<div class="overflow-hidden border border-outline-variant/10 scroll-reveal">
+<table class="w-full text-left">
+<thead>
+<tr class="border-b border-outline-variant/10 bg-surface-container-low">
+<th class="p-8 text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">Nature of Case</th>
+<th class="p-8 text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">Jurisdiction</th>
+<th class="p-8 text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">Outcome Date</th>
+<th class="p-8"></th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10">
+<tr class="group hover:bg-surface-container transition-colors cursor-pointer">
+<td class="p-8">
+<div class="font-bold text-xl group-hover:text-primary transition-colors">Global Tech Acquisition</div>
+<div class="text-xs text-on-surface-variant mt-1">Corporate / Antitrust</div>
+</td>
+<td class="p-8">
+<span class="px-4 py-1 border border-outline-variant/30 rounded-full text-[10px] font-bold">UNITED KINGDOM</span>
+</td>
+<td class="p-8 text-on-surface-variant font-medium">OCT 2024</td>
+<td class="p-8 text-right">
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all text-primary">arrow_forward</span>
+</td>
+</tr>
+<tr class="group hover:bg-surface-container transition-colors cursor-pointer bg-primary/5">
+<td class="p-8">
+<div class="font-bold text-xl text-primary">High-Profile Asset Recovery</div>
+<div class="text-xs text-primary/60 mt-1">Civil / Financial Fraud</div>
+</td>
+<td class="p-8">
+<span class="px-4 py-1 border border-primary/30 rounded-full text-[10px] font-bold text-primary bg-primary/10">MULTI-STATE</span>
+</td>
+<td class="p-8 text-primary font-medium">SEP 2024</td>
+<td class="p-8 text-right">
+<div class="inline-flex items-center gap-3">
+<span class="text-[10px] font-bold text-primary tracking-widest">LANDMARK</span>
+<span class="material-symbols-outlined text-primary">arrow_forward</span>
+</div>
+</td>
+</tr>
+<tr class="group hover:bg-surface-container transition-colors cursor-pointer">
+<td class="p-8">
+<div class="font-bold text-xl group-hover:text-primary transition-colors">Maritime Law Dispute</div>
+<div class="text-xs text-on-surface-variant mt-1">Specialized Litigation</div>
+</td>
+<td class="p-8">
+<span class="px-4 py-1 border border-outline-variant/30 rounded-full text-[10px] font-bold">INTERNATIONAL</span>
+</td>
+<td class="p-8 text-on-surface-variant font-medium">AUG 2024</td>
+<td class="p-8 text-right">
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all text-primary">arrow_forward</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-16 text-center scroll-reveal">
+<button class="border border-outline-variant/30 px-12 py-5 rounded-full font-bold hover:bg-primary hover:text-on-primary hover:border-primary transition-all group">
+                    View Full Track Record
+                    <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_outward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-section-gap bg-surface-container-low overflow-hidden" id="process">
+<div class="max-w-container-max mx-auto px-margin-desktop relative">
+<div class="absolute top-1/2 left-0 w-full h-[1px] bg-primary/10 -translate-y-1/2 hidden lg:block"></div>
+<div class="grid lg:grid-cols-4 gap-12 relative z-10">
+<!-- Step 1 -->
+<div class="scroll-reveal" style="transition-delay: 0.1s">
+<div class="bg-surface p-12 space-y-8 glass premium-shadow h-full border-t-2 border-primary/20">
+<div class="text-5xl font-black text-primary/5 tracking-tighter">01.</div>
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary text-3xl">chat</span>
+</div>
+<div class="space-y-4">
+<h4 class="text-2xl font-bold">Intake Analysis</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Deep-dive consultation to uncover the granular nuances of your legal challenge.</p>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="scroll-reveal lg:mt-24" style="transition-delay: 0.2s">
+<div class="bg-surface p-12 space-y-8 glass premium-shadow h-full border-t-2 border-primary/20">
+<div class="text-5xl font-black text-primary/5 tracking-tighter">02.</div>
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary text-3xl">query_stats</span>
+</div>
+<div class="space-y-4">
+<h4 class="text-2xl font-bold">Tactical Design</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Architecting a legal strategy that anticipates opposition moves and pivots as needed.</p>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="scroll-reveal" style="transition-delay: 0.3s">
+<div class="bg-surface p-12 space-y-8 glass premium-shadow h-full border-t-2 border-primary/20">
+<div class="text-5xl font-black text-primary/5 tracking-tighter">03.</div>
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary text-3xl">balance</span>
+</div>
+<div class="space-y-4">
+<h4 class="text-2xl font-bold">Active Advocacy</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Relentless execution of the legal roadmap across filings, hearings, and negotiations.</p>
+</div>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="scroll-reveal lg:mt-24" style="transition-delay: 0.4s">
+<div class="bg-surface p-12 space-y-8 glass premium-shadow h-full border-t-2 border-primary/20">
+<div class="text-5xl font-black text-primary/5 tracking-tighter">04.</div>
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary text-3xl">emoji_events</span>
+</div>
+<div class="space-y-4">
+<h4 class="text-2xl font-bold">Favorable Exit</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Final resolution designed to secure your interests and finalize all legal obligations.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-section-gap bg-surface" id="testimonials">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid lg:grid-cols-2 gap-24 items-center">
+<div class="relative scroll-reveal">
+<div class="aspect-square bg-surface-container overflow-hidden rounded-sm premium-shadow">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwOaBrpNAny62yBC4z1PdOLd3IWkGN6njM0ejY2gZj6uqEx0bO0IJv_JSPbGrlpr_qqAfkIE3S0ijNJhafVQSgqMV0eprikpuDsXrPXS7B9zvX0Tl4yUFwXFc3kidB6qwgJPwT7O0i_fD1wXe8xwMF7nVOVhcYWW7s9ytAWaOoH3aKeW0dBDxUnM1EoExNBoPllSObcZRZmsLBXWu-CketFmFN8qjoQyXgTNEdENO3OibED-HrhPG-P_7_7WnXruGleupjTtD0jXuc"/>
+</div>
+<!-- Absolute element for polish -->
+<div class="absolute -bottom-10 -left-10 bg-primary p-12 shadow-2xl">
+<div class="text-5xl font-bold text-on-primary">"</div>
+<p class="text-on-primary font-bold tracking-widest uppercase text-xs mt-4">Verified Client</p>
+</div>
+</div>
+<div class="space-y-12 scroll-reveal" style="transition-delay: 0.2s">
+<div class="space-y-4">
+<div class="text-primary font-bold tracking-[0.3em] uppercase text-xs">Testimonials</div>
+<h2 class="text-5xl font-bold tracking-tight">Voices of Trust</h2>
+</div>
+<div class="space-y-8">
+<div class="flex text-primary gap-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-3xl font-medium leading-relaxed italic text-on-surface">
+                            "The clarity and strategic foresight provided by Rashtra's team was instrumental in our recent successful acquisition. Their ability to manage global complexities while maintaining absolute professional integrity is unparalleled."
+                        </p>
+<div class="pt-8 border-t border-outline-variant/10">
+<div class="text-xl font-bold">Richard David</div>
+<div class="text-on-surface-variant font-medium">CEO, Atlas Ventures Inc.</div>
+</div>
+</div>
+<div class="flex gap-4">
+<button class="w-14 h-14 rounded-full border border-outline-variant/30 flex items-center justify-center hover:border-primary transition-all">
+<span class="material-symbols-outlined">west</span>
+</button>
+<button class="w-14 h-14 rounded-full border border-outline-variant/30 flex items-center justify-center hover:border-primary transition-all">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap bg-surface-container-lowest" id="contact">
+<div class="max-w-container-max mx-auto px-margin-desktop scroll-reveal">
+<div class="grid lg:grid-cols-2 gap-24">
+<div class="space-y-12">
+<div class="space-y-6">
+<div class="text-primary font-bold tracking-[0.3em] uppercase text-xs">Let's Connect</div>
+<h2 class="text-6xl font-bold tracking-tight">Initiate Your<br/>Advocacy</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-md">
+                            Every landmark legal success begins with a single conversation. Reach out to schedule a privileged consultation with our senior counsel.
+                        </p>
+</div>
+<div class="space-y-8">
+<div class="flex items-start gap-6">
+<div class="w-12 h-12 bg-surface-container rounded-sm flex items-center justify-center border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<div class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mb-1">Direct Inquiries</div>
+<div class="text-xl font-bold">counsel@robert.law</div>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="w-12 h-12 bg-surface-container rounded-sm flex items-center justify-center border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary">phone_iphone</span>
+</div>
+<div>
+<div class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mb-1">Privileged Line</div>
+<div class="text-xl font-bold">+1 (234) 567 8910</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<form class="glass p-12 space-y-8 premium-shadow border border-outline-variant/10">
+<div class="grid md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Full Name</label>
+<input class="w-full bg-surface-container border-outline-variant/20 focus:border-primary focus:ring-primary rounded-sm p-4 text-on-surface" placeholder="Johnathan Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Company</label>
+<input class="w-full bg-surface-container border-outline-variant/20 focus:border-primary focus:ring-primary rounded-sm p-4 text-on-surface" placeholder="Acme Global" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Inquiry Type</label>
+<select class="w-full bg-surface-container border-outline-variant/20 focus:border-primary focus:ring-primary rounded-sm p-4 text-on-surface">
+<option>Corporate Counsel</option>
+<option>Civil Litigation</option>
+<option>Asset Protection</option>
+<option>Other Legal Matter</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Initial Context</label>
+<textarea class="w-full bg-surface-container border-outline-variant/20 focus:border-primary focus:ring-primary rounded-sm p-4 text-on-surface" placeholder="Briefly describe your requirements..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 rounded-sm font-bold uppercase tracking-[0.2em] hover:brightness-110 active:scale-[0.98] transition-all shadow-xl shadow-primary/20">
+                            Request Privileged Session
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/10">
+<div class="max-w-container-max mx-auto px-margin-desktop py-section-gap">
+<div class="grid lg:grid-cols-4 gap-16">
+<div class="lg:col-span-2 space-y-8">
+<a class="text-3xl font-extrabold tracking-tight text-on-surface flex items-center gap-2" href="#">
+<span class="w-10 h-10 bg-primary rounded-sm inline-block"></span>
+                    Rashtra Pal
+                </a>
+<p class="text-on-surface-variant max-w-sm leading-relaxed">
+                    A premier legal boutique specializing in high-complexity corporate advisory and elite defensive strategies for global entities.
+                </p>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-full border border-outline-variant/20 flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+<a class="w-12 h-12 rounded-full border border-outline-variant/20 flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+</div>
+</div>
+<div class="space-y-8">
+<h4 class="text-sm font-bold uppercase tracking-[0.2em] text-primary">Firm Navigation</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Practice Areas</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Client Portals</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Case Studies</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Regulatory Disclosures</a></li>
+</ul>
+</div>
+<div class="space-y-8">
+<h4 class="text-sm font-bold uppercase tracking-[0.2em] text-primary">Office HQ</h4>
+<div class="space-y-4 text-on-surface-variant font-medium">
+<p>123 Legal Plaza, 5th Avenue<br/>New York, NY 10001</p>
+<p>Open Mon - Fri: 08:00 - 18:00</p>
+</div>
+</div>
+</div>
+<div class="mt-24 pt-12 border-t border-outline-variant/5 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-[clamp(2rem,10vw,8rem)] font-black text-on-surface/5 uppercase tracking-tighter select-none">
+                Rashtra Pal
+            </div>
+<div class="text-xs font-bold text-on-surface-variant/40 tracking-[0.2em] uppercase">
+                © 2024 ROBERT LEGAL CONSULTING. All Rights Reserved.
+            </div>
+</div>
+</div>
+</footer>
+<!-- FAB -->
+<button class="fixed bottom-10 right-10 w-20 h-20 bg-primary text-on-primary rounded-sm flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-[60] group premium-shadow">
+<span class="material-symbols-outlined text-3xl group-hover:rotate-12 transition-transform" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="absolute right-24 bg-surface border border-primary/20 px-6 py-3 text-primary text-xs font-bold opacity-0 group-hover:opacity-100 transition-all whitespace-nowrap rounded-sm pointer-events-none translate-x-10 group-hover:translate-x-0">
+        Direct Counsel
+    </span>
+</button>
+<script>
+    // Header transition on scroll
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('main-header');
+        if (window.scrollY > 50) {
+            header.classList.remove('py-8');
+            header.classList.add('py-4', 'bg-background/20', 'backdrop-blur-sm');
+        } else {
+            header.classList.add('py-8');
+            header.classList.remove('py-4', 'bg-background/20', 'backdrop-blur-sm');
+        }
+    });
+
+    // Intersection Observer for scroll reveal
+    const observerOptions = {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                // Optional: Unobserve after showing
+                // observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.scroll-reveal').forEach(el => {
+        observer.observe(el);
+    });
+
+    // Parallax effect for decorative elements
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        document.querySelectorAll('.parallax').forEach(el => {
+            const speed = el.dataset.speed || 0.5;
+            el.style.transform = `translateY(${scrolled * speed}px)`;
+        });
+    });
+
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if(targetId === '#') return;
+            
+            const target = document.querySelector(targetId);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+</script>
+</body></html>
