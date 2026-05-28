@@ -140,14 +140,44 @@
         .hero-vignette {
             background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(17,20,21,0.6) 100%);
         }
+        #main-header.scrolled {
+            background: rgba(250, 249, 247, 0.95);
+            backdrop-filter: blur(16px);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(116, 120, 120, 0.1);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        #main-header.scrolled a {
+            color: #1a1c1b !important;
+        }
+        #main-header.scrolled .nav-link {
+            color: rgba(26, 28, 27, 0.8) !important;
+        }
+        #main-header.scrolled .nav-link:hover {
+            color: #1a1c1b !important;
+        }
+        #main-header.scrolled button {
+            border-color: rgba(26, 28, 27, 0.3);
+            color: #1a1c1b;
+        }
+        #main-header.scrolled button:hover {
+            background: #1a1c1b;
+            color: #ffffff;
+        }
+        @media (max-width: 1023px) {
+            .hero-image-mobile {
+                object-position: 80% 25% !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-secondary selection:text-on-secondary antialiased">
 <!-- TopNavBar -->
-<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-8 px-margin-desktop" id="main-header">
-    <nav class="max-w-container-max mx-auto flex justify-between items-center px-10 py-4">
-        <a class="text-2xl font-extrabold tracking-tight text-white flex items-center gap-2" href="#">
-            <span class="w-8 h-8 bg-secondary rounded-sm inline-block"></span>
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-4 md:py-8 px-4 md:px-margin-desktop" id="main-header">
+    <nav class="max-w-container-max mx-auto flex justify-between items-center px-4 md:px-10 py-3 md:py-4">
+        <a class="text-xl md:text-2xl font-extrabold tracking-tight text-white flex items-center gap-2" href="#">
+            <span class="w-6 h-6 md:w-8 md:h-8 bg-secondary rounded-sm inline-block"></span>
             Rashtra Pal
         </a>
         <div class="hidden md:flex items-center gap-10">
@@ -157,26 +187,26 @@
             <a class="nav-link relative text-white/80 hover:text-white transition-colors font-medium text-sm tracking-wide uppercase" href="#process">Method</a>
             <a class="nav-link relative text-white/80 hover:text-white transition-colors font-medium text-sm tracking-wide uppercase" href="#testimonials">Reviews</a>
         </div>
-        <button class="border border-white/30 text-white px-8 py-2 rounded font-bold hover:bg-white hover:text-background transition-all text-sm uppercase tracking-widest flex items-center gap-2">
+        <button class="border border-white/30 text-white px-4 md:px-8 py-2 rounded font-bold hover:bg-white hover:text-background transition-all text-xs md:text-sm uppercase tracking-widest flex items-center gap-2">
             Request a Consultation
-            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            <span class="material-symbols-outlined text-xs md:text-sm">arrow_forward</span>
         </button>
     </nav>
 </header>
 <main>
 <!-- Hero Section Re-composed to match IMAGE_9 -->
-<section class="relative h-screen min-h-[800px] flex items-center overflow-hidden bg-background">
+<section class="relative min-h-screen lg:h-screen lg:min-h-[800px] flex items-center overflow-hidden bg-background py-32 lg:py-0">
     <!-- Background Composition based on IMAGE_17 -->
     <div class="absolute inset-0 z-0">
-        <img alt="Professional Portrait in Library" class="w-full h-full object-cover object-[center_30%] brightness-75 hero-reveal" src="assets/images/lawyer_portrait.png" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuD-Km4iA2tDBgEITlHp4YP02dEqngExd6hBtMF3cD5QmwuddLULHhhsFG6EEdgJVZgm9U36suRXl-et9rzlOsyQjY58AFBx6jWUBATHHI7lyXGXZNS4VLJgs0rEywHX4DT-a6cgurn2A2gmeI_HlIDqda1EKh8CAa5QgfAagyH_H5DvFDWmU7wJGMFrme68Rfs5r41Yhusdq-hTByvcIsTGNDqzgaXb7OekD_6TelbW04Hzyw-A8_QNaJEFQ0PQKXoyGxaefCAbKMax';"/>
+        <img alt="Professional Portrait in Library" class="w-full h-full object-cover object-[center_30%] brightness-75 hero-reveal hero-image-mobile" src="assets/images/lawyer_portrait.png" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuD-Km4iA2tDBgEITlHp4YP02dEqngExd6hBtMF3cD5QmwuddLULHhhsFG6EEdgJVZgm9U36suRXl-et9rzlOsyQjY58AFBx6jWUBATHHI7lyXGXZNS4VLJgs0rEywHX4DT-a6cgurn2A2gmeI_HlIDqda1EKh8CAa5QgfAagyH_H5DvFDWmU7wJGMFrme68Rfs5r41Yhusdq-hTByvcIsTGNDqzgaXb7OekD_6TelbW04Hzyw-A8_QNaJEFQ0PQKXoyGxaefCAbKMax';"/>
         <div class="absolute inset-0 hero-vignette"></div>
     </div>
-    <div class="max-w-container-max mx-auto px-margin-desktop w-full relative z-10">
+    <div class="max-w-container-max mx-auto px-6 md:px-margin-desktop w-full relative z-10">
         <div class="grid lg:grid-cols-12 gap-12 items-center h-full">
             <!-- Left Side Content -->
-            <div class="lg:col-span-6 flex flex-col justify-center h-full pt-20">
+            <div class="lg:col-span-7 flex flex-col justify-center h-full pt-12 lg:pt-20">
                 <div class="hero-reveal" style="animation-delay: 0.2s">
-                    <h1 class="text-white text-[clamp(2.5rem,5vw,5rem)] font-bold leading-[1.1] tracking-tight mb-12 drop-shadow-lg">
+                    <h1 class="text-white text-[clamp(2.2rem,5vw,5rem)] font-bold leading-[1.1] tracking-tight mb-8 lg:mb-12 drop-shadow-lg text-left">
                         Justice with<br/>
                         Clarity in a<br/>
                         Complex World
@@ -187,26 +217,26 @@
                 </div>
             </div>
             <!-- Right Side Content -->
-            <div class="lg:col-span-6 flex flex-col justify-between items-end h-full pt-48 pb-12">
-                <div class="max-w-sm text-right lg:text-left lg:ml-auto hero-reveal" style="animation-delay: 0.4s">
-                    <p class="text-white text-lg leading-relaxed mb-12">
+            <div class="lg:col-span-5 flex flex-col justify-between lg:items-end h-full pt-4 lg:pt-48 pb-4 lg:pb-12">
+                <div class="max-w-sm text-left lg:text-right lg:ml-auto hero-reveal" style="animation-delay: 0.4s">
+                    <p class="text-white text-base lg:text-lg leading-relaxed mb-8 lg:mb-12">
                         Transforming legal challenges into clear strategies through experience, insight, and a commitment to achieving meaningful client outcomes.
                     </p>
                 </div>
-                <div class="flex flex-col items-end gap-12 hero-reveal" style="animation-delay: 0.6s">
+                <div class="flex flex-col items-start lg:items-end gap-8 lg:gap-12 hero-reveal" style="animation-delay: 0.6s">
                     <!-- Stats Row -->
-                    <div class="flex gap-16 text-right">
+                    <div class="flex gap-12 lg:gap-16 text-left lg:text-right">
                         <div>
-                            <div class="text-white text-5xl font-bold mb-1">96%</div>
+                            <div class="text-white text-4xl lg:text-5xl font-bold mb-1">96%</div>
                             <div class="text-white/60 text-xs font-bold tracking-widest uppercase">Success Rate</div>
                         </div>
                         <div>
-                            <div class="text-white text-5xl font-bold mb-1">150+</div>
+                            <div class="text-white text-4xl lg:text-5xl font-bold mb-1">150+</div>
                             <div class="text-white/60 text-xs font-bold tracking-widest uppercase">Successful Cases</div>
                         </div>
                     </div>
                     <!-- CTA Button -->
-                    <button class="bg-secondary text-on-secondary px-10 py-4 rounded font-bold hover:brightness-110 transition-all flex items-center gap-3 shadow-2xl group">
+                    <button class="bg-secondary text-on-secondary px-8 lg:px-10 py-3.5 lg:py-4 rounded font-bold hover:brightness-110 transition-all flex items-center gap-3 shadow-2xl group text-sm lg:text-base">
                         Get Legal Guidance
                         <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
                     </button>
@@ -634,11 +664,9 @@
     window.addEventListener('scroll', () => {
         const header = document.getElementById('main-header');
         if (window.scrollY > 50) {
-            header.classList.add('bg-background/90', 'backdrop-blur-md', 'py-4');
-            header.classList.remove('py-8');
+            header.classList.add('scrolled');
         } else {
-            header.classList.remove('bg-background/90', 'backdrop-blur-md', 'py-4');
-            header.classList.add('py-8');
+            header.classList.remove('scrolled');
         }
     });
 
